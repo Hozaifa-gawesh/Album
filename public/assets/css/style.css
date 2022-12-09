@@ -1,0 +1,268 @@
+:root {
+    --MainColor: #ff214f;
+    --Black: #262626;
+}
+
+body {
+    font-family: Poppins, Helvetica, sans-serif;
+    color: #555;
+    overflow-x: hidden;
+    background: #eff4fa;
+    font-size: 14px;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+a {
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--MainColor);
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+button {
+    outline: 0 !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    font-size: 14px;
+}
+
+button:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: 0;
+}
+
+button, a {
+    font-size: 14px !important;
+    -webkit-transition: all .4s ease-in-out !important;
+    -o-transition: all .4s ease-in-out !important;
+    -ms-transition: all .4s ease-in-out !important;
+    transition: all .4s ease-in-out !important;
+}
+
+.clear {
+    clear: both;
+}
+
+.main_color {
+    color: var(--MainColor);
+}
+
+.form-control,
+.form-select {
+    height: 40px;
+    font-size: 14px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--MainColor);
+    box-shadow: 0 0 0 0.2rem rgba(255, 233, 204, 0.25);
+}
+
+.required {
+    position: relative;
+    top: 2px;
+    color: #e02222;
+    font-size: 14px;
+    padding-left: 2px;
+}
+
+label {
+    display: block;
+}
+
+.btn-primary {
+    background-color: var(--MainColor);
+    border-color: var(--MainColor);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:active {
+    color: #fff;
+    background-color: var(--Black);
+    border-color: var(--Black);
+}
+
+.wrapper {
+    /*padding: 70px 0;*/
+}
+
+.card {
+    padding: 30px;
+    -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 0;
+}
+
+.card-header {
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    position: relative;
+}
+
+.card-header h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #000000;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.card-header h2:before {
+    content: "";
+    height: 3px;
+    width: 12px;
+    background-color: var(--MainColor);
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.card-header h2:after {
+    content: "";
+    height: 3px;
+    width: 25px;
+    background-color: var(--MainColor);
+    border-radius: 4px;
+    position: absolute;
+    left: 16px;
+    bottom: 0;
+}
+
+.card-body {
+    margin-top: 15px;
+    padding: 0;
+}
+
+.search-content label {
+    position: absolute;
+    top: -12px;
+    left: 18px;
+    background: #fff;
+    padding: 1px 5px;
+    border-radius: 3px;
+    color: var(--MainColor);
+    z-index: 10;
+}
+
+.form-group {
+    position: relative;
+}
+
+.search-actions {
+    margin-top: 10px;
+}
+
+.search-content .btn {
+    font-size: 14px;
+}
+
+.btn-search {
+    border-color: var(--MainColor);
+    color: var(--MainColor);
+    background-color: transparent;
+}
+
+.btn-search:hover {
+    color: var(--white);
+    background-color: var(--MainColor);
+}
+
+.table {
+    color: #3f4254;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+
+.table thead th {
+    border-color: #ebedf3;
+}
+
+.badge {
+    padding: 0.25rem 0.75rem;
+}
+
+.add-new {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+}
+
+.page-link {
+    color: var(--MainColor);
+}
+
+.page-item.active .page-link {
+    background-color: var(--MainColor);
+    border-color: var(--MainColor);
+}
+
+.badge-count {
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    width: 16px;
+    height: 16px;
+    line-height: 17px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 11px;
+    color: #fff;
+    background-color: var(--MainColor);
+}
+
+.swal2-close {
+    font-size: 25px !important;
+}
+
+.loading_request {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .5);
+    z-index: 99;
+    display: none;
+}
+
+.loading_request img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.img-table {
+    width: 70px;
+    height: 60px;
+}
