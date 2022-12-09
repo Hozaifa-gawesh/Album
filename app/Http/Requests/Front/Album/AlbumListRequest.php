@@ -29,7 +29,7 @@ class AlbumListRequest extends FormRequest
         return [
             'name' => ['nullable', 'string', 'max:255'],
             'status' => ['nullable', 'string', Rule::in(Album::STATUS_ALBUM)],
-            'records' => ['nullable', 'integer', 'between:10,100'],
+            'paginate' => ['nullable', 'integer', 'between:10,100'],
             'sort_by' => ['nullable', 'string', Rule::in(ConstantsGeneral::SORTING)],
         ];
     }

@@ -32,7 +32,7 @@ class PictureService
     public function picturesList(array $request = [], bool $paginate = true)
     {
         $query = $this->mainQuery();
-        return $paginate ? ($query->paginate($request['pagination'] ?? ConstantsGeneral::PAGINATION_ITEMS_COUNT)) : $query->get();
+        return $paginate ? ($query->paginate($request['paginate'] ?? ConstantsGeneral::PAGINATION_ITEMS_COUNT)) : $query->get();
     }
 
 

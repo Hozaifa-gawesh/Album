@@ -33,7 +33,7 @@ class AlbumService
     {
         // Set Query
         $query = $this->mainQuery($request, $withCount, $relation);
-        return $paginate ? ($query->paginate($request['pagination'] ?? ConstantsGeneral::PAGINATION_ITEMS_COUNT)) : $query->get();
+        return $paginate ? ($query->paginate($request['paginate'] ?? ConstantsGeneral::PAGINATION_ITEMS_COUNT)) : $query->get();
     }
 
 
